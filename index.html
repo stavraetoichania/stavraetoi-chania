@@ -748,23 +748,6 @@
       transform: scale(1.06);
     }
 
-    .gal-card-caption {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to top, rgba(24, 21, 18, 0.88) 0%, rgba(24, 21, 18, 0.12) 55%, transparent 100%);
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding: 20px;
-      color: #FFFFFF;
-    }
-
-    .gal-card-caption p {
-      font-size: 0.94rem;
-      font-weight: 500;
-      line-height: 1.38;
-    }
-
     /* Lightbox */
     .lightbox-overlay {
       position: fixed;
@@ -788,26 +771,11 @@
     }
 
     .lightbox-box img {
-      max-height: 75vh;
+      max-height: 82vh;
       max-width: 100%;
       margin: 0 auto;
       border-radius: var(--radius-md);
       border: 2px solid var(--gold);
-    }
-
-    .lightbox-caption-wrap {
-      margin-top: 16px;
-      color: #FFFFFF;
-    }
-
-    .lightbox-cat-badge {
-      display: inline-block;
-      background-color: var(--crimson);
-      font-size: 0.75rem;
-      font-weight: 700;
-      padding: 4px 12px;
-      border-radius: var(--radius-pill);
-      margin-bottom: 6px;
     }
 
     .lightbox-close-btn {
@@ -948,8 +916,7 @@
     }
 
     /* ==========================================================================
-       8Β. ΔΙΟΙΚΗΤΙΚΟ ΣΥΜΒΟΥΛΙΟ — ΝΕΑ ΤΥΠΟΓΡΑΦΙΚΗ / ΟΡΓΑΝΩΤΙΚΗ ΠΑΡΟΥΣΙΑΣΗ
-       (Χωρίς κάρτες φωτογραφιών: καθαρή λίστα σύνθεσης ΔΣ με χρυσή στήλη ρόλου)
+       8Β. ΔΙΟΙΚΗΤΙΚΟ ΣΥΜΒΟΥΛΙΟ — ΤΥΠΟΓΡΑΦΙΚΗ / ΟΡΓΑΝΩΤΙΚΗ ΠΑΡΟΥΣΙΑΣΗ
        ========================================================================== */
     .board-header {
       display: flex;
@@ -1533,10 +1500,6 @@
     <button type="button" class="lightbox-arrow lightbox-prev" onclick="stepLightbox(-1)" aria-label="Προηγούμενη">&#10094;</button>
     <div class="lightbox-box">
       <img id="lbImg" src="" alt="" />
-      <div class="lightbox-caption-wrap">
-        <span class="lightbox-cat-badge" id="lbCat"></span>
-        <p id="lbDesc"></p>
-      </div>
     </div>
     <button type="button" class="lightbox-arrow lightbox-next" onclick="stepLightbox(1)" aria-label="Επόμενη">&#10095;</button>
   </div>
@@ -1878,55 +1841,43 @@
         cat: 'events',
         src: 'image2.jpg',
         tagEl: 'Εκδηλώσεις',
-        tagEn: 'Events',
-        descEl: 'Παραδοσιακή Στράτα',
-        descEn: 'Traditional Strata'
+        tagEn: 'Events'
       },
       {
         cat: 'events',
         src: 'image3.jpg',
         tagEl: 'Εκδηλώσεις',
-        tagEn: 'Events',
-        descEl: 'Σταυραετοί και Σκλόκα',
-        descEn: 'Stavraetoi and Skloka'
+        tagEn: 'Events'
       },
       {
         cat: 'events',
         src: 'image4.jpg',
         tagEl: 'Εκδηλώσεις',
-        tagEn: 'Events',
-        descEl: 'Χορός με την συμμετοχή του κόσμου',
-        descEn: 'Dancing along with people'
+        tagEn: 'Events'
       },
       {
         cat: 'events',
         src: 'image6.jpg',
         tagEl: 'Εκδηλώσεις',
-        tagEn: 'Events',
-        descEl: 'Στιγμιότυπο-Σούστα',
-        descEn: 'Snapshot of Sousta'
+        tagEn: 'Events'
       },
       {
         cat: 'events',
         src: 'image5.jpg',
         tagEl: 'Εκδηλώσεις',
-        tagEn: 'Events',
+        tagEn: 'Events'
       },
       {
         cat: 'classes',
         src: 'image8.jpg',
         tagEl: 'Μαθήματα & Πρόβες',
-        tagEn: 'Classes & Rehearsals',
-        descEl: 'Έναρξη παραδοσιακής στράτας Χανίων',
-        descEn: 'Opening day of traditional strata of Chania'
+        tagEn: 'Classes & Rehearsals'
       },
       {
         cat: 'costumes',
         src: 'image12.jpg',
         tagEl: 'Παραδοσιακές Φορεσιές',
-        tagEn: 'Traditional Costumes',
-        descEl: 'Στιβάνια-Παραδοσιακά υποδήματα',
-        descEn: 'Stivania-Traditional cretan boots'
+        tagEn: 'Traditional Costumes'
       }
     ];
 
@@ -1949,7 +1900,7 @@
         heroBtnRegister: 'Εγγραφή σε Τμήμα',
         heroBtnEvents: 'Πρόγραμμα Εκδηλώσεων',
         manKicker: 'Η Φιλοσοφία μας',
-        manQuote: '«Η παράδοση δεν είναι μουσειακό έκθεμα· είναι ο τρόπος που πατάμε στη γη, ο ρυθμός της λύρας και η συντροφικότητα του κύκλου.»',
+        manQuote: '«Να διαφυλάξουμε και να μεταδώσουμε στις επόμενες γενιές την παράδοση, τα ήθη και τα έθιμα, την τοπική ιστορία και τις αξίες εκείνες που δίνουν νόημα και ουσία στην καθημερινή ζωή.»',
         manBody: 'Από την ίδρυσή μας στα Χανιά το 1972, οι «Σταυραετοί» καλλιεργούν το γνήσιο κρητικό ύφος χωρίς επιτηδεύσεις, φέρνοντας κοντά μικρούς και μεγάλους μέσα από τον χορό, τη μουσική και τον σεβασμό στην ιστορία του τόπου μας.',
         manSig: 'Χανιά, Κρήτη • Πολιτιστική & Χορευτική Παρουσία από το 1972',
         p1Title: 'Κρητικοί Χοροί & Μουσική',
@@ -2060,7 +2011,7 @@
         heroBtnRegister: 'Register for a Class',
         heroBtnEvents: 'Events Schedule',
         manKicker: 'Our Philosophy',
-        manQuote: '“Tradition is not a museum exhibit; it is how we step upon the earth, the rhythm of the lyra, and the fellowship of the dance circle.”',
+        manQuote: '“To safeguard and pass on to future generations our tradition, customs and mores, local history, and the values that give meaning and substance to everyday life.”',
         manBody: 'Since our founding in Chania in 1972, "Stavraetoi" has cultivated genuine Cretan style without pretension, bringing children and adults together through dance, music, and respect for local history.',
         manSig: 'Chania, Crete • Cultural & Dance Presence Since 1972',
         p1Title: 'Cretan Dances & Music',
@@ -2291,18 +2242,14 @@
       if (!grid) return;
       grid.innerHTML = currentFilteredPhotos.map((item, idx) => {
         const tag = currentLang === 'el' ? item.tagEl : item.tagEn;
-        const desc = currentLang === 'el' ? item.descEl : item.descEn;
         return `
-          <div class="gal-card" onclick="openLightbox(${idx})" role="button" tabindex="0" aria-label="${desc}">
+          <div class="gal-card" onclick="openLightbox(${idx})" role="button" tabindex="0" aria-label="${tag}">
             <img
               src="${item.src}"
-              alt="${desc}"
+              alt="${tag}"
               loading="lazy"
               onerror="this.onerror=null;this.src='https://placehold.co/800x600/231F1C/E2C265?text=${encodeURIComponent(tag)}';"
             />
-            <div class="gal-card-caption">
-              <p>${desc}</p>
-            </div>
           </div>
         `;
       }).join('');
@@ -2330,11 +2277,8 @@
       const item = currentFilteredPhotos[currentLbIndex];
       if (!item) return;
       const tag = currentLang === 'el' ? item.tagEl : item.tagEn;
-      const desc = currentLang === 'el' ? item.descEl : item.descEn;
       document.getElementById('lbImg').src = item.src;
-      document.getElementById('lbImg').alt = desc;
-      document.getElementById('lbCat').textContent = `${tag} (${currentLbIndex + 1}/${currentFilteredPhotos.length})`;
-      document.getElementById('lbDesc').textContent = desc;
+      document.getElementById('lbImg').alt = tag;
     }
 
     const lbOverlay = document.getElementById('lightboxOverlay');
